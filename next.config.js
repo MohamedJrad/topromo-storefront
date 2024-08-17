@@ -8,11 +8,11 @@ const nextConfig = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost",
-      },
+    remotePatterns: [{
+      protocol: "https",
+      hostname: "minio.tazia.io",
+    },
+
       {
         protocol: "https",
         hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
