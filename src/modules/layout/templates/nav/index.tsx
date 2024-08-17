@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import { ShoppingCartSolid } from "@medusajs/icons"
 
 import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
@@ -21,15 +22,14 @@ export default async function Nav() {
           <div className="flex items-center h-full">
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-              data-testid="nav-store-link"
+              className="txt-compact-xlarge-plus hover:text-ui-fg-base " data-testid="nav-store-link"
             >
-              Medusa Store
+              Top Promo TN
             </LocalizedClientLink>
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
+            {/* <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
                 <LocalizedClientLink
                   className="hover:text-ui-fg-base"
@@ -48,17 +48,21 @@ export default async function Nav() {
                 Account
               </LocalizedClientLink>
             </div>
+           */}
             <Suspense
               fallback={
                 <LocalizedClientLink
-                  className="hover:text-ui-fg-base flex gap-2"
-                  href="/cart"
+                  className="hover:text-ui-fg-base flex  bg-red-700" href="/cart"
                   data-testid="nav-cart-link"
-                >
-                  Cart (0)
+                > 
+                
+         
+                  Panier          <ShoppingCartSolid  /> (0)
+     
                 </LocalizedClientLink>
               }
             >
+       
               <CartButton />
             </Suspense>
           </div>

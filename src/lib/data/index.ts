@@ -594,7 +594,7 @@ export const getCollectionsList = cache(async function (
       throw err
     })
 
-  const count = collections.length
+  const count = collections?.length || 0
 
   return {
     collections,

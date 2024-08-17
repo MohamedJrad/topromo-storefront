@@ -55,7 +55,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
 
   return (
     <div>
-      <Listbox
+      {/* <Listbox
         as="span"
         onChange={handleChange}
         defaultValue={
@@ -116,7 +116,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
             </Listbox.Options>
           </Transition>
         </div>
-      </Listbox>
+      </Listbox> */}
     </div>
   )
 }

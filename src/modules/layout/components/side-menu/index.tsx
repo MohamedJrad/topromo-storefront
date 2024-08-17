@@ -12,8 +12,8 @@ import CountrySelect from "../country-select"
 const SideMenuItems = {
   Home: "/",
   Store: "/store",
-  Search: "/search",
-  Account: "/account",
+  // Search: "/search",
+  // Account: "/account",
   Cart: "/cart",
 }
 
@@ -65,7 +65,8 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         )
                       })}
                     </ul>
-                    <div className="flex flex-col gap-y-6">
+                    <div className="flex flex-col gap-y-6"></div>
+                    {/* <div className="flex flex-col gap-y-6">
                       <div
                         className="flex justify-between"
                         onMouseEnter={toggleState.open}
@@ -88,7 +89,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         © {new Date().getFullYear()} Medusa Store. All rights
                         reserved.
                       </Text>
-                    </div>
+                    </div> */}
                   </div>
                 </Popover.Panel>
               </Transition>

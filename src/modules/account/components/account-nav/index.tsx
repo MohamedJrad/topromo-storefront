@@ -33,10 +33,10 @@ const AccountNav = ({
             className="flex items-center gap-x-2 text-small-regular py-2"
             data-testid="account-main-link"
           >
-            <>
+            {/* <>
               <ChevronDown className="transform rotate-90" />
               <span>Account</span>
-            </>
+            </> */}
           </LocalizedClientLink>
         ) : (
           <>
@@ -109,9 +109,9 @@ const AccountNav = ({
       </div>
       <div className="hidden small:block" data-testid="account-nav">
         <div>
-          <div className="pb-4">
+          {/* <div className="pb-4">
             <h3 className="text-base-semi">Account</h3>
-          </div>
+          </div> */}
           <div className="text-base-regular">
             <ul className="flex mb-0 justify-start items-start flex-col gap-y-4">
               <li>
